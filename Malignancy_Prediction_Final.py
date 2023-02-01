@@ -20,7 +20,7 @@ import os
 import numpy as np
 import ast
 
-from Cla_Comp_Model import Classification_Component
+from Cla_Comp_Model_new import Classification_Component
 
 #extract ROI patches and radiomics features
 print('extracting rois and radiomics features starts')
