@@ -7,17 +7,10 @@ import sys
 # treatment_site = str(sys.argv[4])
 # PET_exist = str(sys.argv[5])  #### two options: False (None) or Have
 
-# MRN = 92936442
-# ct_dir = 'C:/Users/s160958/Desktop/INRT AIR/' + str(MRN) +'/contrast CT'
-# pet_dir = 'C:/Users/s160958/Desktop/INRT AIR/' + str(MRN) +'/PET'
-# struct_dir = 'C:/Users/s160958/Desktop/INRT AIR/' + str(MRN) +'/node_structure'
-# treatment_site = 'oropharynx' ## two options: larynx and oropharynx
-# PET_exist = 'Have'  #### two options: False (None) or Have
-
-MRN = 72190479
-ct_dir = 'T:/Physics_Research/LABS/LAB_Wang_Zhang/Sepeadeh/HN_data/' + str(MRN) +'/contrast CT'
-pet_dir = 'T:/Physics_Research/LABS/LAB_Wang_Zhang/Sepeadeh/HN_data/' + str(MRN) +'/PET'
-struct_dir = 'T:/Physics_Research/LABS/LAB_Wang_Zhang/Sepeadeh/HN_data/' + str(MRN) +'/node_structure'
+MRN = xxxxxx #patient MRN number
+ct_dir = 'C:/HN_LN_Malignancy_Prediction/CT_contrast' # CT image folder
+pet_dir = 'C:/HN_LN_Malignancy_Prediction/PET' # PET image folder
+struct_dir = 'C:/HN_LN_Malignancy_Prediction/node_structure' # lymph node contour folder
 treatment_site = 'oropharynx' ## two options: larynx and oropharynx
 PET_exist = 'False'  #### two options: False (None) or Have
 
@@ -27,20 +20,17 @@ import os
 import numpy as np
 import ast
 
-from LY_Malignancy_Prediction_LN_FC_Model import LN_category_pred_model
 from Cla_Comp_Model import Classification_Component
 
 #extract ROI patches and radiomics features
 print('extracting rois and radiomics features starts')
-proc = subprocess.Popen(['update3/Extract_ROIs_RadiomicsFeatures_new5.exe']+[ct_dir,pet_dir,struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+proc = subprocess.Popen(['exefolder/Extract_ROIs_RadiomicsFeatures_new5.exe']+[ct_dir,pet_dir,struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 exit_code = proc.wait()
 print('extracting rois and radiomics features is done')
 
 ## CNN model prediction
 roi_patch = scipy.io.loadmat(struct_dir + '/roi_patch',squeeze_me=True,struct_as_record=False)['roi_patch']
-
 rlen = scipy.io.loadmat(struct_dir + '/roi_number',squeeze_me=True,struct_as_record=False)['len']#len(ast.literal_eval(list_struct)) #len((list_struct))#
-
 MRN = scipy.io.loadmat(struct_dir + '/MRN',squeeze_me=True,struct_as_record=False)['MRN']
 
 if treatment_site == 'oropharynx':
@@ -152,12 +142,12 @@ if PET_exist == 'Have':
 print('CNN prediction is done')
 ## radiomics model prediction
 
-radi_prob = subprocess.Popen(['update3/radiomics_prediction.exe']+[treatment_site,struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+radi_prob = subprocess.Popen(['exefolder/radiomics_prediction.exe']+[treatment_site,struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 radi_prob.wait()
 print('radiomics prediction is done')
 
 ## fuse model
-fin_proc = subprocess.Popen(['update3/ER_Fusion.exe']+ [treatment_site, struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+fin_proc = subprocess.Popen(['exefolder/ER_Fusion.exe']+ [treatment_site, struct_dir,PET_exist],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 fin_proc.wait()
 
 # os.remove(struct_dir + '/fea.mat')
