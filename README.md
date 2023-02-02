@@ -15,6 +15,5 @@
 ##### Trained Models are available in the following link:
 https://drive.google.com/drive/folders/14pWvh-vqjaFe9cLS7usEwDg9svJR0foH?usp=share_link
 
-##### To get more details of the prediction algorithms, please refer to the following paper:
+##### This package was used to generate lymph node malignancy prediction results for a manuscript submitted to Nature Medicine.
 
-1. Combining many-objective radiomics and 3D convolutional neural network through evidential reasoning to predict lymph node metastasis in head and neck cancer
