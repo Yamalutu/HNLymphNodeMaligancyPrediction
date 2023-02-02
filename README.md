@@ -4,7 +4,12 @@
 
 (1). matlab runtime 9.2
 (2). python 3.6
-(3). tensorflow 1.12
+(3). tensorflow 1.12 
+
+installing tensorflow 1.12 through anaconda is recommended by using following commands:
+
+conda create -n tensorflow==1.12.0
+conda activate tensorflow==1.12.0
 
 ##### To get the malignancy prediction of the HN lymph nodes, please run Malignancy_Prediction_Final.py
 
