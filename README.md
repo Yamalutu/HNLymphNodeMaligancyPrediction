@@ -17,7 +17,7 @@ conda activate tensorflow==1.12.0
 
 ##### an anonymized dataset for testing has been provided in the example folder
 
-##### Three trained CNN models and radiomics_prediction.exe are available in the following link:
+##### Three trained CNN models, radiomics_prediction.exe and an example case are available to download in the following link:
 https://drive.google.com/drive/folders/14pWvh-vqjaFe9cLS7usEwDg9svJR0foH?usp=share_link
 
 ##### This package was used to generate lymph node malignancy prediction results for a manuscript submitted to Nature Medicine.
