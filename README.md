@@ -14,18 +14,13 @@ conda create -n tensorflow==1.12.0
 
 conda activate tensorflow==1.12.0
 
-##### three matlab exes including roi_feature_extraction.exe, radiomics_prediction.exe and ER_fusion.exe are compressed into matlab exe.part1.rar and matlab exe.part2.rar
+##### Matlab exes including roi_feature_extraction.exe, radiomics_prediction.exe and ER_fusion.exe are compressed into two RAR files: matlab exe.part1.rar and matlab exe.part2.rar
 
-##### three trained CNN models are compressed into trained CNN models.part1.rar, trained CNN models.part2.rar, trained CNN models.part3.rar, trained CNN models.part4.rar, and trained CNN models.part5.rar.
+##### Pre-trained CNN models are compressed into five RAR files: trained CNN models.part1.rar, trained CNN models.part2.rar, trained CNN models.part3.rar, trained CNN models.part4.rar, and trained CNN models.part5.rar.
 
-##### An anonymized example case including CT images, PET images, lymph node strucgtures and the expected predition results for each lymph node are also available and compressed into 
+##### An anonymized example case including CT images, PET images, lymph node strucgtures and the expected predition results for each lymph node are available to download in the following link:
 
-
-
-##### Three trained CNN models, radiomics_prediction.exe and an anonymized example case which includes CT, PET, lymph node sturctures and the expected outputs are available to download in the following link:
-
-https://drive.google.com/drive/folders/14pWvh-vqjaFe9cLS7usEwDg9svJR0foH?usp=share_link          
-
+https://drive.google.com/drive/folders/1cMNPtuoSCYgQKU0AYcSepu5llM9F5cRo?usp=share_link     
 
 ##### To get the malignancy prediction of the HN lymph nodes, please run Malignancy_Prediction_Final.py
 
