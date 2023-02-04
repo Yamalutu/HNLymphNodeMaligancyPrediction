@@ -26,5 +26,5 @@ https://drive.google.com/drive/folders/1cMNPtuoSCYgQKU0AYcSepu5llM9F5cRo?usp=sha
 
 ##### Inside of Malignancy_Prediction_Final.py, please update the folder directories in which CT images, PET images, and lymph node contours exsit respectively as well as the patient MRN based on your own test data. Especially, in the node_structure folder, there are two items: one is the exported structure set which needs a specific name as "AIR.dcm", and the other item is a text file with a specific name as "Structures.txt". In the "Structures.txt", you just need to list the lymph node names that you want to do the prediction. 
 
-##### This package was used to generate lymph node malignancy prediction results for a manuscript submitted to Nature Medicine.
+##### This software package generated the lymph node malignancy predictions for a manuscript submitted to Nature Medicine. The executable files were split and password protected using WinRar. To extract the .part files, use WinRar or 7-Zip (https://www.7-zip.org/), and enter the password provided during the manuscript submission process
 
