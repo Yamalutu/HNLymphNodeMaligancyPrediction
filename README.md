@@ -38,9 +38,9 @@ Redistribution and use in source and binary forms, with or without modification,
 
 *Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-*Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.ANY USE OR REDISTRIBUTION OF THIS SOFTWARE FOR COMMERCIAL PURPOSES, WHETHER IN SOURCE OR BINARY FORM, WITH OR WITHOUT MODIFICATION, IS EXPRESSLY PROHIBITED; 
+*Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-ANY USE OR REDISTRIBUTION BY A FOR-PROFIT ENTITY SHALL COMPRISE USE OR REDISTRIBUTION FOR COMMERCIAL PURPOSES.
+ANY USE OR REDISTRIBUTION OF THIS SOFTWARE FOR COMMERCIAL PURPOSES, WHETHER IN SOURCE OR BINARY FORM, WITH OR WITHOUT MODIFICATION, IS EXPRESSLY PROHIBITED; ANY USE OR REDISTRIBUTION BY A FOR-PROFIT ENTITY SHALL COMPRISE USE OR REDISTRIBUTION FOR COMMERCIAL PURPOSES.
 
 NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. 
 
