@@ -28,7 +28,7 @@ https://drive.google.com/drive/folders/1cMNPtuoSCYgQKU0AYcSepu5llM9F5cRo?usp=sha
 
 ##### This software package generated the lymph node malignancy predictions for a manuscript submitted to Nature Medicine. The executable files were split and password protected using WinRar. To extract the .part files, use WinRar or 7-Zip (https://www.7-zip.org/), and enter the password provided during the manuscript submission process.
 
-Copyright (c) 2003 The University of Texas Southwestern Medical Center.
+Copyright (c) 2023 The University of Texas Southwestern Medical Center.
 
 All rights reserved.
 
